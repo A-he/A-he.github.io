@@ -2,19 +2,34 @@
 <html>
 <head>
   <link rel="stylesheet" href="style.css">
-<style>
-h1 {
-  color: rgb(75, 75, 187);
-  font-family: verdana;
-  font-size: 300%;
+  <style>
+    h1 {
+      color: rgb(75, 75, 187);
+      font-family: verdana;
+      font-size: 300%;
+    }
+    p  {
+      color: rgb(214, 72, 72);
+      font-family: courier;
+      font-size: 160%;
+    }
+  </style>
 
-}
-p  {
-  color: rgb(214, 72, 72);
-  font-family: courier;
-  font-size: 160%;
-}
-</style>
+  <!-- Include jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // jQuery code starts here
+
+      // Example 1: Change text color of all paragraphs
+      $('p').css('color', 'green');
+
+      // Example 2: Fade out the centered text
+      $('center').fadeOut('slow');
+
+      // jQuery code ends here
+    });
+  </script>
 </head>
 <body>
 <p>我好帥</p>
@@ -29,4 +44,3 @@ p  {
 
 </body>
 </html>
-
